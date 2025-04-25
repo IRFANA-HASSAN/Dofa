@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>User Location Interface</title>
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="dot-pattern"></div>
+        
+        <div class="map-container">
+            <div class="user-marker" id="userMarker">
+                <div class="pin">
+                    <div class="pin-inner">
+                        <img src="/api/placeholder/50/50" alt="User" id="userPinImage">
+                    </div>
+                </div>
+                <div class="user-name" id="userName">You</div>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li class="list active">
+                        <a href="/index3.html">
+                            <span class="icon">
+                                <img src="./assets/notification.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="/index1.html">
+                            <span class="icon">
+                                <img src="./assets/search.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+            
+            <div class="user-details" id="userDetails">
+                <img src="/api/placeholder/100/100" alt="User Profile" id="userDetailPhoto" class="user-photo">
+                <div class="user-info">
+                    <h3 id="userDetailName">Anna Jhone</h3>
+                    <p id="userDetailEmail">user@example.com</p>
+                    <p id="userDetailLocation">California</p>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./js/index.js"></script>
+    </body>
+    </html>
