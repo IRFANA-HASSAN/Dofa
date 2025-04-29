@@ -14,6 +14,14 @@ const inputs = document.querySelectorAll(".otp-inputs input");
       });
     });
 
+
+
+    function setRealVH() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', setRealVH);
+    window.addEventListener('load', setRealVH);
     // function submitOTP() {
     //   const otp = Array.from(inputs).map(input => input.value).join('');
     //   if (otp.length === 4) {

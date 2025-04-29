@@ -73,3 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function goHome() {
     window.location.href = "Home.html"; // Change this to your actual home page path
   }
+
+
+  function setRealVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', setRealVH);
+  window.addEventListener('load', setRealVH);

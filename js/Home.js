@@ -42,14 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Home.js
-
-// Home.js
-
-// Home.js
-
-// Home.js
-
 window.addEventListener('DOMContentLoaded', function () {
     const fullName = localStorage.getItem('fullName') || "Unknown User";
     const location = localStorage.getItem('location') || "Unknown Location";
@@ -75,3 +67,10 @@ window.addEventListener('DOMContentLoaded', function () {
         userPinImage.src = "/assets/profile2.jpg"; // Default pin image
     }
 });
+
+function setRealVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', setRealVH);
+  window.addEventListener('load', setRealVH);
