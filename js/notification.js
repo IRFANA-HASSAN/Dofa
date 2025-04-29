@@ -158,3 +158,13 @@ function setRealVH() {
   }
   window.addEventListener('resize', setRealVH);
   window.addEventListener('load', setRealVH);
+
+
+
+searchIcon.addEventListener("click" , function() {
+    window.location.href = "search.html"
+} )
+
+homeIcon.addEventListener("click" , function() {
+    window.location.href = "home.html"
+} )
