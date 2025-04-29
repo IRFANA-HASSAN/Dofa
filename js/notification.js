@@ -160,6 +160,9 @@ function setRealVH() {
   window.addEventListener('load', setRealVH);
 
 
+  let searchIcon = document.querySelector("div.searchIcon");
+  let homeIcon = document.querySelector("div.homeIcon");
+  
 
 searchIcon.addEventListener("click" , function() {
     window.location.href = "search.html"
