@@ -42,4 +42,36 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Home.js
 
+// Home.js
+
+// Home.js
+
+// Home.js
+
+window.addEventListener('DOMContentLoaded', function () {
+    const fullName = localStorage.getItem('fullName') || "Unknown User";
+    const location = localStorage.getItem('location') || "Unknown Location";
+    const profileImage = localStorage.getItem('profileImage'); // Get the stored image
+
+    // Fill the user details
+    document.getElementById('userDetailName').textContent = fullName;
+    document.getElementById('userDetailLocation').textContent = location;
+
+    // Set profile image in user details
+    const userDetailPhoto = document.getElementById('userDetailPhoto');
+    if (profileImage) {
+        userDetailPhoto.src = profileImage;
+    } else {
+        userDetailPhoto.src = "/assets/np.png"; // Default if no image
+    }
+
+    // Set profile image in user pin
+    const userPinImage = document.getElementById('userPinImage');
+    if (profileImage) {
+        userPinImage.src = profileImage;
+    } else {
+        userPinImage.src = "/assets/profile2.jpg"; // Default pin image
+    }
+});

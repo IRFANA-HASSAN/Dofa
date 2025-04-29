@@ -5,10 +5,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 body {
-    background-color: #f5f7f9;
+    background-color:#d8e3ef;
 }
 .container {
-    background-color: white;
     margin: 0 auto;
     height: 100vh;
 }
@@ -27,7 +26,7 @@ body {
     gap: 5px;
 }
 .search-container {
-    background-color: #e1f1fc91;
+    background-color: #ffffff91;
     padding: 15px;
     border-radius: 20px;
     margin: 10px;
@@ -74,7 +73,7 @@ body {
     padding: 15px;
     align-items: center;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f7fbff;
     margin-bottom: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }

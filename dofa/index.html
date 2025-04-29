@@ -1,57 +1,59 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>User Location Interface</title>
-        <style>
-           
-        </style>
-    </head>
-    <body>
-        <div class="background"></div>
-        <div class="dot-pattern"></div>
-        
-        <div class="map-container">
-            <div class="user-marker" id="userMarker">
-                <div class="pin">
-                    <div class="pin-inner">
-                        <img src="/api/placeholder/50/50" alt="User" id="userPinImage">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOFA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/js/utils.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17/build/css/intlTelInput.min.css"/>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <section id="splash-screen">
+        <img src="assets/LOGO-ICON.png" alt="Logo-Image" class="image1" />
+        <img src="assets/LOGO-LETTER-WOBG.png" alt="Logo-Image" class="image2" />
+    </section>
+
+    <section id="onboard">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="screen">
+                <div class="top">
+                    <h1>Embrace the world <br> with <b>DOFA</b></h1>
+                    <p>The top-rated app where the world unite...</p>
+                </div>
+                <div class="bottom">
+                    <div class="indicator-container">
+                        <div class="indicator" style="background-color: #0a3d74;"></div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="next">
+                        <img src="assets/Arrow - Right 2.svg" alt="">
                     </div>
                 </div>
-                <div class="user-name" id="userName">You</div>
             </div>
-            <div class="navigation">
-                <ul>
-                    <li class="list active">
-                        <a href="/index3.html">
-                            <span class="icon">
-                                <img src="./assets/notification.svg" alt="">
-                            </span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="/index1.html">
-                            <span class="icon">
-                                <img src="./assets/search.svg" alt="">
-                            </span>
-                        </a>
-                    </li>
-                    <div class="indicator"></div>
-                </ul>
-            </div>
-            
-            <div class="user-details" id="userDetails">
-                <img src="/api/placeholder/100/100" alt="User Profile" id="userDetailPhoto" class="user-photo">
-                <div class="user-info">
-                    <h3 id="userDetailName">Anna Jhone</h3>
-                    <p id="userDetailEmail">user@example.com</p>
-                    <p id="userDetailLocation">California</p>
+    
+            <!-- Slide 2 -->
+            <div class="screen">
+                <div class="top">
+                    <h1>WELCOME TO <b>DOFA</b></h1>
+                    <p style="color: black;">Log in with your phone number</p>
+                    <form id="register-form">
+                        <input id="phone" type="tel" name="phone" required  pattern="[0-9]+" inputmode="numeric"/>
+                        <a href="login-verify.html" id="submit" type="submit">Sent OTP</a>
+                    </form>
+                    <h6>Dont you have an account? <a href="signup.html">Sign Up</a></h6>
+                </div>
+                <div class="bottom">
+                    <div class="indicator-container">
+                        <div class="indicator"></div>
+                        <div class="indicator" style="background-color: #0a3d74;"></div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <script src="./js/index.js"></script>
-    </body>
-    </html>
+    </section>
+</body>
+</html>
