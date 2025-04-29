@@ -74,3 +74,15 @@ function setRealVH() {
   }
   window.addEventListener('resize', setRealVH);
   window.addEventListener('load', setRealVH);
+
+
+let searchIcon = document.querySelector("div.searchIcon");
+let notificationIcon = document.querySelector("div.notificationIcon");
+
+searchIcon.addEventListener("click" , function() {
+    window.location.href = "search.html"
+} )
+
+notificationIcon.addEventListener("click" , function() {
+    window.location.href = "notification.html"
+} )
