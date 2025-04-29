@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContacts(filteredContacts);
   }
   function goHome() {
-    window.location.href = "Home.html"; // Change this to your actual home page path
+    window.location.href = "home.html"; // Change this to your actual home page path
   }
 
 

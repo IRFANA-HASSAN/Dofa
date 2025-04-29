@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('location', document.getElementById('location').value.trim());
 
         // Go to Home
-        window.location.href = "Home.html";
+        window.location.href = "home.html";
     });
 });
 
