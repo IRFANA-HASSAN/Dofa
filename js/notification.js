@@ -149,19 +149,10 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Connection rejected!');
         });
     });
-});
 
 
-function setRealVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  window.addEventListener('resize', setRealVH);
-  window.addEventListener('load', setRealVH);
-
-
-  let searchIcon = document.querySelector("div.searchIcon");
-  let homeIcon = document.querySelector("div.homeIcon");
+let searchIcon = document.querySelector("div.searchIcon");
+let homeIcon = document.querySelector("div.homeIcon");
   
 
 searchIcon.addEventListener("click" , function() {
@@ -171,3 +162,19 @@ searchIcon.addEventListener("click" , function() {
 homeIcon.addEventListener("click" , function() {
     window.location.href = "home.html"
 } )
+
+function setRealVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', setRealVH);
+  window.addEventListener('load', setRealVH);
+
+
+  
+
+
+
+
+
+});
